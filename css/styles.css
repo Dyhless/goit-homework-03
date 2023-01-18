@@ -1,0 +1,181 @@
+:root {
+   --primary-font: 'Roboto', sans-serif;
+   --secondary-font: 'Raleway', sans-serif;
+   --accent-color: #404BBF;
+   --main-font-color: #2E2F42;
+   --button-color: #4D5AE5;
+   --footer-font-color: #E7E9FC;
+}
+
+* {
+   margin: 0;
+}
+
+.logo,
+.list, 
+.contacts {
+   list-style: none;
+   text-decoration: none;
+}
+
+/**
+  |============================
+  | Font Styles
+  |============================
+*/
+
+body {
+   font-family: var(--primary-font),var(--secondary-font);
+   color: var(--main-font-color);
+   background-color: #FFFFFF;
+   letter-spacing: 0.02em;
+}
+
+.main-names {
+   font-size: 36px;
+   line-height: 1.11em;
+}
+
+.titles {
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 1.2em;
+}
+
+.paragraph {
+   font-size: 16px;
+   line-height: 1.5em;
+}
+
+/**
+  |============================
+  | HERO
+  |============================
+*/
+
+.dark-bg {
+   background: var(--main-font-color);
+   color: #FFFFFF;
+}
+
+.main-title {
+   font-weight: 700;
+   font-size: 56px;
+   line-height: 1.07em;
+}
+
+/**
+  |============================
+  | HEADER
+  |============================
+*/
+
+.menu-item {
+   text-decoration: none;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.5em;
+   letter-spacing: 0.02em;
+   color: var(--main-font-color);
+}
+
+.menu-item:hover,
+.menu-item:focus {
+   color: var(--accent-color);
+}
+
+.contact-item {
+   text-decoration: none;
+   font-size: 16px;
+   line-height: 1.5em;
+   letter-spacing: 0.02em;
+   color: #434455;
+}
+
+.contact-link :hover,
+.contact-link :focus {
+   color: var(--accent-color);
+}
+
+/**
+  |============================
+  | BUTTONS
+  |============================
+*/
+
+.button-order {
+   color: #FFFFFF;
+   background-color: var(--button-color);
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.5em;
+   display: flex;
+   align-items: center;
+   letter-spacing: 0.04em;
+}
+
+.button-order:hover,
+.button-order:focus,
+.button-filter:hover,
+.button-filter:focus {
+   color: #FFFFFF;
+   background-color: var(--accent-color);
+   cursor: pointer;
+}
+
+.button-filter {
+   color: var(--button-color);
+   background-color: #E7E9FC;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.5em;
+   display: flex;
+   align-items: center;
+   text-align: center;
+   letter-spacing: 0.04em;
+}
+
+/**
+  |============================
+  | LOGO
+  |============================
+*/
+
+.logo {
+   font-family: 'Raleway', sans-serif;
+   font-weight: 800;
+   font-size: 18px;
+   line-height: 1.33em;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+   color: #4D5AE5;
+}
+
+.logo-dark {
+   color: var(--main-font-color);
+}
+
+.logo-light {
+   color: #F4F4FD;
+}
+
+/**
+  |============================
+  | FOOTER
+  |============================
+*/
+
+.footer {
+   background: var(--main-font-color);
+}
+
+.footer-text {
+font-size: 16px;
+line-height: 1.5em;
+letter-spacing: 0.02em;
+color: var(--footer-font-color);
+}
+
+.current {
+   color: var(--accent-color);
+}
