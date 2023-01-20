@@ -8,6 +8,16 @@ html {
    box-sizing: inherit;
 }
 
+h1,
+h2,
+h3,
+h4,
+h6,
+h6,
+p {
+   margin: 0;
+}
+
 :root {
    --primary-font: 'Roboto', sans-serif;
    --secondary-font: 'Raleway', sans-serif;
@@ -15,10 +25,16 @@ html {
    --main-font-color: #2E2F42;
    --button-color: #4D5AE5;
    --footer-font-color: #E7E9FC;
+   --main-background-color: #FFFFFF; 
+   --contact-item-color: #434455;
+   --logo-light-color: #F4F4FD;
 }
 
-* {
-   margin: 0;
+body {
+   font-family: var(--primary-font), var(--secondary-font);
+   color: var(--main-font-color);
+   background-color: var(--main-background-color);
+   letter-spacing: 0.02em;
 }
 
 .logo,
@@ -28,50 +44,14 @@ html {
    text-decoration: none;
 }
 
-/**
-  |============================
-  | Font Styles
-  |============================
-*/
+.container {
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: 15px;
+   padding-right: 15px;
+   width: 1158px;
 
-body {
-   font-family: var(--primary-font),var(--secondary-font);
-   color: var(--main-font-color);
-   background-color: #FFFFFF;
-   letter-spacing: 0.02em;
-}
-
-.main-names {
-   font-size: 36px;
-   line-height: 1.11em;
-}
-
-.titles {
-   font-weight: 500;
-   font-size: 20px;
-   line-height: 1.2em;
-}
-
-.paragraph {
-   font-size: 16px;
-   line-height: 1.5em;
-}
-
-/**
-  |============================
-  | HERO
-  |============================
-*/
-
-.dark-bg {
-   background: var(--main-font-color);
-   color: #FFFFFF;
-}
-
-.main-title {
-   font-weight: 700;
-   font-size: 56px;
-   line-height: 1.07em;
+   outline: 2px solid tomato;
 }
 
 /**
@@ -79,6 +59,31 @@ body {
   | HEADER
   |============================
 */
+
+.current {
+   color: var(--accent-color);
+}
+
+.menu {
+   display: flex;
+   justify-content: space-between;
+   width: 261px;
+   padding-left: 0;
+   
+   outline: 2px solid tomato;
+}
+
+.list-item {
+   margin-top: 24px;
+   margin-bottom: 24px;
+}
+
+.contacts {
+   display: flex;
+   margin-left: 332px;
+
+   outline: 2px solid tomato;
+}
 
 .menu-item {
    text-decoration: none;
@@ -94,62 +99,36 @@ body {
    color: var(--accent-color);
 }
 
+
 .contact-item {
    text-decoration: none;
    font-size: 16px;
    line-height: 1.5em;
    letter-spacing: 0.02em;
-   color: #434455;
+   color: var(--contact-item-color);
+   margin: 0;
+   padding: 0;
 }
 
-.contact-link :hover,
-.contact-link :focus {
+.phone {
+   margin-top: 24px;
+   margin-right: 0;
+   margin-bottom: 24px;
+   margin-left: 40px;
+}
+
+.email {
+   margin-top: 24px;
+   margin-right: 0;
+   margin-left: 332px;
+   margin-bottom: 24px;
+}
+
+.phone,
+.email :hover,
+.phone,
+.email :focus {
    color: var(--accent-color);
-}
-
-.container {
-   margin-left: auto;
-   margin-right: auto;
-   width: 1158px;
-   outline: 2px solid tomato;
-}
-
-/**
-  |============================
-  | BUTTONS
-  |============================
-*/
-
-.button-order {
-   color: #FFFFFF;
-   background-color: var(--button-color);
-   font-weight: 500;
-   font-size: 16px;
-   line-height: 1.5em;
-   display: flex;
-   align-items: center;
-   letter-spacing: 0.04em;
-}
-
-.button-order:hover,
-.button-order:focus,
-.button-filter:hover,
-.button-filter:focus {
-   color: #FFFFFF;
-   background-color: var(--accent-color);
-   cursor: pointer;
-}
-
-.button-filter {
-   color: var(--button-color);
-   background-color: #E7E9FC;
-   font-weight: 500;
-   font-size: 16px;
-   line-height: 1.5em;
-   display: flex;
-   align-items: center;
-   text-align: center;
-   letter-spacing: 0.04em;
 }
 
 /**
@@ -173,7 +152,14 @@ body {
 }
 
 .logo-light {
-   color: #F4F4FD;
+   color: var(--logo-light-color);
+}
+
+.logo-section {
+   margin-top: 24px;
+   margin-bottom: 24px;
+   margin-left: 0;
+   margin-right: 76px;
 }
 
 /**
@@ -187,14 +173,185 @@ body {
 }
 
 .footer-text {
-font-size: 16px;
-line-height: 1.5em;
-letter-spacing: 0.02em;
-color: var(--footer-font-color);
+   font-size: 16px;
+   line-height: 1.5em;
+   letter-spacing: 0.02em;
+   color: var(--footer-font-color);
+   width: 264px;
+   margin-top: 16px;
 }
 
-.current {
-   color: var(--accent-color);
+.footer-box{
+   padding-top: 100px;
+   padding-bottom: 100px;
 }
 
+/**
+  |============================
+  | HERO Section
+  |============================
+*/
 
+.hero {
+   text-align: center;
+   background: var(--main-font-color);
+   margin-left: auto;
+   margin-right: auto;
+   color: var(--main-background-color);
+}
+
+.hero-title {
+   font-weight: 700;
+   font-size: 56px;
+   line-height: 1.07em;
+   padding-top: 188px;
+   margin-bottom: 48px;
+   width: 494px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+/**
+  |============================
+  | JOB Screens Section
+  |============================
+*/
+
+.list {
+   display: flex;
+   justify-content:space-between;
+   padding: 0;
+   margin: 0;
+}
+
+.job-images {
+   padding-bottom: 120px;
+}
+
+.work {
+   margin-top: 0;
+   margin-bottom: 72px;
+   text-align: center;
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 1.11;
+   letter-spacing: 0.02em;
+   text-transform: capitalize;
+   color: var(--main-font-color);
+}
+
+/**
+  |============================
+  | Advantages Section
+  |============================
+*/
+
+.advantages {
+   padding-top: 120px;
+   padding-bottom: 120px;
+}
+
+.advantage {
+   display: inline-block;
+}
+
+.advantages-list {
+   list-style: none;
+}
+
+.list-titles {
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 1.2em;
+   margin-bottom: 8px;
+}
+
+.paragraph {
+   font-size: 16px;
+   line-height: 1.5em;
+}
+
+/**
+  |============================
+  | Professionals Section
+  |============================
+*/
+
+.professinals-page {
+   background-color: var(--logo-light-color);
+}
+
+.professionals {
+   font-size: 36px;
+   line-height: 1.11em;
+}
+
+.professinals {
+   text-align: center;
+   padding-top: 120px;
+   padding-bottom: 72px;
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 40px;
+   letter-spacing: 0.02em;
+   text-transform: capitalize;
+   color: var(--main-font-color);
+}
+
+.team-titles {
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 24px;
+   text-align: center;
+   letter-spacing: 0.02em;
+   color: var(--main-font-color);
+}
+
+.professinal-item {
+   font-size: 16px;
+   line-height: 24px;
+   text-align: center;
+   letter-spacing: 0.02em;
+   color: var(--contact-item-color);
+}
+
+/**
+  |============================
+  | BUTTONS
+  |============================
+*/
+
+.button-order {
+   display: inline-block;
+   color: var(--main-background-color);
+   background-color: var(--button-color);
+   border: 1px solid var(--button-color);
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.5em;
+   letter-spacing: 0.04em;
+   border-radius: 4px;
+   padding: 16px 32px;
+   margin-bottom: 188px;
+}
+
+.button-order:hover,
+.button-order:focus,
+.button-filter:hover,
+.button-filter:focus {
+   color: var(--main-background-color);
+   background-color: var(--accent-color);
+   cursor: pointer;
+}
+
+.button-filter {
+   color: var(--button-color);
+   background-color: var(--footer-font-color);
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.5em;
+   display: flex;
+   align-items: center;
+   text-align: center;
+   letter-spacing: 0.04em;
+}
