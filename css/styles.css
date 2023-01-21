@@ -14,7 +14,9 @@ h3,
 h4,
 h6,
 h6,
-p {
+p,
+ul,
+li {
    margin: 0;
 }
 
@@ -37,13 +39,6 @@ body {
    letter-spacing: 0.02em;
 }
 
-.logo,
-.list, 
-.contacts {
-   list-style: none;
-   text-decoration: none;
-}
-
 .container {
    margin-left: auto;
    margin-right: auto;
@@ -64,28 +59,26 @@ body {
    color: var(--accent-color);
 }
 
-.menu {
+.header-container {
    display: flex;
-   justify-content: space-between;
-   width: 261px;
-   padding-left: 0;
-   
-   outline: 2px solid tomato;
+   align-items: center;
 }
 
-.list-item {
-   margin-top: 24px;
-   margin-bottom: 24px;
+.navigation {
+   margin-right: auto;
 }
 
-.contacts {
+.header-list {
+   display: block;
    display: flex;
-   margin-left: 332px;
-
-   outline: 2px solid tomato;
+   gap: 30px;
+   list-style: none;
+   text-decoration: none;
 }
 
 .menu-item {
+   padding-top: 24px;
+   padding-bottom: 24px;
    text-decoration: none;
    font-weight: 500;
    font-size: 16px;
@@ -99,35 +92,28 @@ body {
    color: var(--accent-color);
 }
 
+.header-contacts {
+   display: flex;
+   text-align: center;
+   gap: 40px;
+   padding-top: 24px;
+   padding-right: 0;
+   padding-bottom: 24px;
+}
 
 .contact-item {
+   text-decoration: none;
+   color: var(--contact-item-color);
    text-decoration: none;
    font-size: 16px;
    line-height: 1.5em;
    letter-spacing: 0.02em;
-   color: var(--contact-item-color);
    margin: 0;
    padding: 0;
 }
 
-.phone {
-   margin-top: 24px;
-   margin-right: 0;
-   margin-bottom: 24px;
-   margin-left: 40px;
-}
-
-.email {
-   margin-top: 24px;
-   margin-right: 0;
-   margin-left: 332px;
-   margin-bottom: 24px;
-}
-
-.phone,
-.email :hover,
-.phone,
-.email :focus {
+.contact-item:hover,
+.contact-item:focus {
    color: var(--accent-color);
 }
 
@@ -145,6 +131,9 @@ body {
    letter-spacing: 0.03em;
    text-transform: uppercase;
    color: #4D5AE5;
+   margin-right: 76px;
+   list-style: none;
+   text-decoration: none;
 }
 
 .logo-dark {
@@ -153,13 +142,6 @@ body {
 
 .logo-light {
    color: var(--logo-light-color);
-}
-
-.logo-section {
-   margin-top: 24px;
-   margin-bottom: 24px;
-   margin-left: 0;
-   margin-right: 76px;
 }
 
 /**
@@ -217,13 +199,6 @@ body {
   |============================
 */
 
-.list {
-   display: flex;
-   justify-content:space-between;
-   padding: 0;
-   margin: 0;
-}
-
 .job-images {
    padding-bottom: 120px;
 }
@@ -240,6 +215,13 @@ body {
    color: var(--main-font-color);
 }
 
+.job-list {
+   display: block;
+   display: flex;
+   gap: 24px;
+   list-style: none;
+}
+
 /**
   |============================
   | Advantages Section
@@ -251,24 +233,28 @@ body {
    padding-bottom: 120px;
 }
 
-.advantage {
-   display: inline-block;
+.advantages-container {
+   display: flex;
+   align-items: center;
 }
 
 .advantages-list {
+   display: block;
+   display: flex;
+   gap: 24px;
    list-style: none;
 }
 
 .list-titles {
    font-weight: 500;
    font-size: 20px;
-   line-height: 1.2em;
+   line-height: 1.2;
    margin-bottom: 8px;
 }
 
-.paragraph {
+.title-description {
    font-size: 16px;
-   line-height: 1.5em;
+   line-height: 1.5;
 }
 
 /**
@@ -281,27 +267,30 @@ body {
    background-color: var(--logo-light-color);
 }
 
-.professionals {
-   font-size: 36px;
-   line-height: 1.11em;
-}
-
 .professinals {
    text-align: center;
    padding-top: 120px;
    padding-bottom: 72px;
    font-weight: 700;
    font-size: 36px;
-   line-height: 40px;
+   line-height: 1.11;
    letter-spacing: 0.02em;
    text-transform: capitalize;
    color: var(--main-font-color);
 }
 
+.professional-list {
+   display: block;
+   display: flex;
+   align-items: center;
+   gap: 24px;
+   list-style: none;
+}
+
 .team-titles {
    font-weight: 500;
    font-size: 20px;
-   line-height: 24px;
+   line-height: 1.2;
    text-align: center;
    letter-spacing: 0.02em;
    color: var(--main-font-color);
@@ -309,11 +298,13 @@ body {
 
 .professinal-item {
    font-size: 16px;
-   line-height: 24px;
+   line-height: 1.5;
    text-align: center;
    letter-spacing: 0.02em;
    color: var(--contact-item-color);
 }
+
+
 
 /**
   |============================
