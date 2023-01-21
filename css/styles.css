@@ -13,11 +13,31 @@ h2,
 h3,
 h4,
 h6,
-h6,
-p,
-ul,
-li {
+h6 {
    margin: 0;
+}
+
+ul {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+
+img {
+   display: block;
+}
+
+.visually-hidden {
+   position: absolute;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+   white-space: nowrap;
+   height: 1px;
+   clip-path: inset(100%);
+   clip: rect(0 0 0 0);
+   width: 1px;
+   overflow: hidden;
 }
 
 :root {
@@ -64,6 +84,15 @@ body {
    align-items: center;
 }
 
+.header-contacts {
+   display: flex;
+   text-align: center;
+   gap: 40px;
+   padding-top: 24px;
+   padding-right: 0;
+   padding-bottom: 24px;
+}
+
 .navigation {
    margin-right: auto;
 }
@@ -90,15 +119,6 @@ body {
 .menu-item:hover,
 .menu-item:focus {
    color: var(--accent-color);
-}
-
-.header-contacts {
-   display: flex;
-   text-align: center;
-   gap: 40px;
-   padding-top: 24px;
-   padding-right: 0;
-   padding-bottom: 24px;
 }
 
 .contact-item {
@@ -216,10 +236,9 @@ body {
 }
 
 .job-list {
-   display: block;
    display: flex;
+   flex-wrap: wrap;
    gap: 24px;
-   list-style: none;
 }
 
 /**
@@ -265,6 +284,7 @@ body {
 
 .professinals-page {
    background-color: var(--logo-light-color);
+   padding-bottom: 120px;
 }
 
 .professinals {
@@ -294,6 +314,8 @@ body {
    text-align: center;
    letter-spacing: 0.02em;
    color: var(--main-font-color);
+   padding-top: 32px;
+   padding-bottom: 8px;
 }
 
 .professinal-item {
@@ -302,8 +324,13 @@ body {
    text-align: center;
    letter-spacing: 0.02em;
    color: var(--contact-item-color);
+   padding-bottom: 32px;
+   margin: 0;
 }
 
+.prof-item {
+   background-color: var(--main-background-color);
+}
 
 
 /**
@@ -340,9 +367,39 @@ body {
    background-color: var(--footer-font-color);
    font-weight: 500;
    font-size: 16px;
-   line-height: 1.5em;
-   display: flex;
-   align-items: center;
-   text-align: center;
+   line-height: 1.5;
    letter-spacing: 0.04em;
 }
+
+/**
+  |============================
+  | Filters Style
+  |============================
+*/
+
+.button-list {
+   display: flex;
+   align-items: center;
+}
+
+.button-item {
+   gap: 24px;
+   list-style: none;
+}
+
+/**
+  |============================
+  | Examples Styles
+  |============================
+*/
+
+
+.examples-container {
+   display: flex;
+   align-items: center;
+}
+
+/* .example-item {
+   display: block;
+   gap: 24px;
+} */
