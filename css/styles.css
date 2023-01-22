@@ -74,6 +74,10 @@ body {
   |============================
 */
 
+.header {
+   border-bottom: 1px solid var(--corner-color);
+}
+
 .current {
    color: var(--accent-color);
 }
