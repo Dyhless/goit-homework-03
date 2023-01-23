@@ -13,7 +13,8 @@ h2,
 h3,
 h4,
 h6,
-h6 {
+h6,
+p {
    margin: 0;
 }
 
@@ -91,8 +92,8 @@ body {
    display: flex;
    text-align: center;
    gap: 40px;
-   padding-top: 24px;
    padding-right: 0;
+   padding-top: 24px;
    padding-bottom: 24px;
 }
 
@@ -175,6 +176,9 @@ body {
 
 .footer {
    background: var(--main-font-color);
+   padding-top: 100px;
+   padding-bottom: 100px;
+
 }
 
 .footer-text {
@@ -184,11 +188,6 @@ body {
    color: var(--footer-font-color);
    width: 264px;
    margin-top: 16px;
-}
-
-.footer-box{
-   padding-top: 100px;
-   padding-bottom: 100px;
 }
 
 /**
@@ -202,6 +201,7 @@ body {
    background: var(--main-font-color);
    margin-left: auto;
    margin-right: auto;
+   height: 600px;
    color: var(--main-background-color);
 }
 
@@ -277,6 +277,7 @@ body {
 .title-description {
    font-size: 16px;
    line-height: 1.5;
+   margin: 0;
 }
 
 /**
@@ -287,13 +288,13 @@ body {
 
 .professinals-page {
    background-color: var(--logo-light-color);
+   padding-top: ;
    padding-bottom: 120px;
 }
 
 .professinals {
    text-align: center;
    padding-top: 120px;
-   padding-bottom: 72px;
    font-weight: 700;
    font-size: 36px;
    line-height: 1.11;
@@ -317,8 +318,7 @@ body {
    text-align: center;
    letter-spacing: 0.02em;
    color: var(--main-font-color);
-   padding-top: 32px;
-   padding-bottom: 8px;
+   margin-bottom: 8px;
 }
 
 .professinal-item {
@@ -327,14 +327,18 @@ body {
    text-align: center;
    letter-spacing: 0.02em;
    color: var(--contact-item-color);
-   padding-bottom: 32px;
    margin: 0;
-   
 }
 
 .prof-item {
    background-color: var(--main-background-color);
    box-shadow: 2px 2px 2px var(--corner-color);
+}
+
+.info {
+   padding-top: 32px;
+   padding-bottom: 32px;
+
 }
 
 
@@ -355,7 +359,6 @@ body {
    letter-spacing: 0.04em;
    border-radius: 4px;
    padding: 16px 32px;
-   margin-bottom: 188px;
 }
 
 .button-order:hover,
@@ -391,7 +394,6 @@ body {
    justify-content: center;
    gap: 24px;
    margin-top: 96px;
-   margin-bottom: 72px;
 }
 
 .button-filter {
@@ -406,29 +408,31 @@ body {
   |============================
 */
 
+.gallery-block {
+   padding-top: 72px;
+   padding-bottom: 72px;
+}
 
 .examples-list {
    display: flex;
    justify-content: space-between;
-   margin-bottom: 48px;
+   padding-bottom: 48px;
 }
 
 .example-item {
    gap: 24px; 
-   border: 1px solid var(--corner-color);
 }
 
-.example-item > .titles {
+.titles {
+   margin-bottom: 8px;
+}
+
+.item-info {
    text-align: left;
    padding-top: 32px;
-   padding-bottom: 8px;
-   padding-left: 16px;
-   margin: 0;
-}
-
-.example-item > .signature {
-   text-align: left;
-   padding-left: 16px;
    padding-bottom: 32px;
-   margin: 0;
+   padding-left: 16px;
+   border-right: 1px solid var(--corner-color);
+   border-left: 1px solid var(--corner-color);
+   border-bottom: 1px solid var(--corner-color);
 }
