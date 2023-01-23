@@ -411,13 +411,17 @@ body {
 
 .gallery-block {
    padding-top: 72px;
-   padding-bottom: 72px;
+   /* padding-bottom: 72px; */
 }
 
 .examples-list {
    display: flex;
    justify-content: space-between;
    padding-bottom: 48px;
+}
+
+.examples-list:nth-child(3) {
+   padding-bottom: 120px;
 }
 
 .example-item {
