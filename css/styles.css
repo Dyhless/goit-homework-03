@@ -1,3 +1,4 @@
+
 html {
    box-sizing: border-box;
 }
@@ -104,7 +105,7 @@ body {
 .header-list {
    display: block;
    display: flex;
-   gap: 30px;
+   gap: 40px;
    list-style: none;
    text-decoration: none;
 }
@@ -201,7 +202,7 @@ body {
    background: var(--main-font-color);
    margin-left: auto;
    margin-right: auto;
-   height: 600px;
+   padding: 188px 0;
    color: var(--main-background-color);
 }
 
@@ -209,7 +210,6 @@ body {
    font-weight: 700;
    font-size: 56px;
    line-height: 1.07em;
-   padding-top: 188px;
    margin-bottom: 48px;
    width: 494px;
    margin-left: auto;
@@ -288,19 +288,19 @@ body {
 
 .professinals-page {
    background-color: var(--logo-light-color);
-   padding-top: ;
+   padding-top: 120px;
    padding-bottom: 120px;
 }
 
 .professinals {
    text-align: center;
-   padding-top: 120px;
    font-weight: 700;
    font-size: 36px;
    line-height: 1.11;
    letter-spacing: 0.02em;
    text-transform: capitalize;
    color: var(--main-font-color);
+   margin-bottom: 72px;
 }
 
 .professional-list {
@@ -394,6 +394,7 @@ body {
    display: flex;
    justify-content: center;
    gap: 24px;
+   margin-bottom: 72px;
    margin-top: 96px;
 }
 
@@ -410,18 +411,17 @@ body {
 */
 
 .gallery-block {
-   padding-top: 72px;
-   /* padding-bottom: 72px; */
+   margin-bottom: 120px;
 }
 
 .examples-list {
    display: flex;
    justify-content: space-between;
-   padding-bottom: 48px;
+   margin-bottom: 72px;
 }
 
 .examples-list:nth-child(3) {
-   padding-bottom: 120px;
+   margin-bottom: 0;
 }
 
 .example-item {
@@ -430,6 +430,13 @@ body {
 
 .titles {
    margin-bottom: 8px;
+   line-height: 1.2;
+   letter-spacing: 0.02em;
+}
+
+.signature {
+   line-height: 1.5;
+   letter-spacing: 0.02em;
 }
 
 .item-info {
